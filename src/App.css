@@ -1,0 +1,106 @@
+@import "tailwindcss";
+html,
+body,
+#root
+{
+  width: 100%;
+  background-color: black;
+  /* position: relative; */
+}
+
+.ex{
+  transition: all 0.2s linear;
+}
+
+#canvas-elm{
+  position: relative;
+  --bg-opacity: 1;
+}
+#canvas-elm::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(/background-m.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  --bg-opacity: 1; 
+  opacity: var(--bg-opacity);
+  transition: all 0.3s linear;
+}
+
+
+.ex p{
+  opacity: 0.3;
+  transition: all 0.3s linear;
+}
+
+.ex:hover p{
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+main:has(.ex:hover) #canvas-elm::after{
+  opacity: 0;
+}
+
+.image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+}
+
+
+main:has(.ex[img-title="Tomorrowland"]:hover) #tomorowland{
+  opacity: 1;
+  background-color: #1d2447;
+}
+main:has(.ex p[img-title="Navy Pier"]:hover) #navy-pier{
+  opacity: 1;
+  background-color: #1d2447;
+}
+main:has(.ex p[img-title="MSI Chicago"]:hover) #msi-chicago{
+  opacity: 1;
+  background-color: #1d2447;
+}
+main:has(.ex p[img-title="This Way Louise's Phone"]:hover) #phone{
+  opacity: 1;
+  background-color: #1d2447;
+}
+main:has(.ex p[img-title="Kikk Festival 2018"]:hover) #kikk{
+  opacity: 1;
+  background-color: #143ea8c8;
+}
+main:has(.ex p[img-title="The Kennedy Center"]:hover) #kennedy{
+  opacity: 1;
+  background-color: #1d2447;
+}
+main:has(.ex p[img-title="Royal Opera Of Wallonia"]:hover) #opera{
+  opacity: 1;
+  background-color: rgb(179, 17, 17);
+}
+
+#section-5{
+  box-shadow: -67px -87px 52px 69px #000000;
+}
+#last{
+  box-shadow: -67px 7px 10px 50px black;
+}
+
