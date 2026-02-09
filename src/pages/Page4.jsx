@@ -4,7 +4,7 @@ const Page4 = () => {
   return (
     <div id="section-4" className="">
       <div className="flex mt-36">
-        <div className=" w-[30%] ml-74 mt-46 h-full flex flex-col gap-14  items-start text-white">
+        <div className="z-0 w-[30%] ml-74 mt-46 h-full flex flex-col gap-14  items-start text-white">
           <h1 className=" uppercase">This is how we do it</h1>
           <p className="text-5xl w-full font-serif">We`re carfting emotional experiences aimed at improving results.</p>
         </div>

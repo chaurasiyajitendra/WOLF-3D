@@ -5,7 +5,7 @@ const Page1 = () => {
     <div id="section-1" className="text-white z-50 h-screen">
       <nav className=" p-5 px-20 flex justify-between items-center">
         <div>
-          <svg className="fill-white w-36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401.23099 116.838">
+          <svg className="fill-white w-36 relative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401.23099 116.838">
             <path d="M97.9212,84.4793c0-13.21301-7.2132-23.3924-25.54961-23.3924h-19.6172v46.7851h19.6172c18.3364,0,25.54961-10.1797,25.54961-23.3927Zm-13.3478,0c0,9.2356-5.1908,12.6737-12.404,12.6737h-6.6739v-25.3474h6.6739c7.2132,0,12.404,3.4381,12.404,12.6737Z"></path>
             <path d="M100.972,107.872h37.078v-10.6516h-24.33701v-8.0222h21.37v-10.112h-21.37v-7.348h23.73v-10.6513h-36.47099v46.7851Z"></path>
             <path d="M181.211,77.3335c0-11.7973-7.55-16.2466-19.28-16.2466h-20.29199v46.7851h12.741v-14.2919h7.55099c11.73,0,19.28-4.4493,19.28-16.2466Zm-13.213,0c0,4.5841-2.157,6.47169-7.34801,6.47169h-6.26999v-12.9434h6.26999c5.19101,0,7.34801,1.8876,7.34801,6.4717Z"></path>
@@ -24,7 +24,7 @@ const Page1 = () => {
           </svg>
         </div>
         <div className="z-10 flex gap-5 items-center text-sm"><FaAngleRight className=" fill-red-400" />Our Showreel</div>
-        <div className="text-2xl"><RiMenu3Fill /></div>
+        <div className="text-2xl relative"><RiMenu3Fill /></div>
       </nav>
       <div className="w-full h-[80%] flex items-center">
         <div className="w-1/2 z-10 text-8xl flex justify-end items-center">

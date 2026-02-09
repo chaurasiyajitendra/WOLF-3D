@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import {Box, useAnimations, useGLTF, useTexture } from "@react-three/drei";
+import {useAnimations, useGLTF, useTexture } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
@@ -20,7 +20,7 @@ const Dog = () => {
     gl.outputColorSpace = THREE.SRGBColorSpace
   })
 
-  const [normalMap,branchMap,branchNormalMap] = (useTexture(["/dog_normals.jpg","branches_diffuse.jpg","branches_normals.jpg"]))
+  const [normalMap,branchNormalMap] = (useTexture(["/dog_normals.jpg","branches_diffuse.jpg","branches_normals.jpg"]))
   .map(texture=>{
     texture.flipY = false,
     texture.colorSpace = THREE.SRGBColorSpace
@@ -131,6 +131,7 @@ const Dog = () => {
   const dogModel = useRef(model);
 
   useGSAP(()=>{
+    
     const tl = gsap.timeline({
       scrollTrigger:{
         trigger:"#section-1",
