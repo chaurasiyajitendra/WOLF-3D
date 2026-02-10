@@ -13,35 +13,35 @@ const Page3 = () => {
 
   return (
     <div id="section-3" className=" flex text-white">
-      <div className="z-10 px-20">
+      <div className="z-10 px-20 w-full">
         <h1 className=" ml-56">Featured projects</h1>
-        <div img-title="Tomorrowland" className= " ex flex items-start gap-16 mt-10">
+        <div img-title="Tomorrowland" className= " ex flex  w-full items-start gap-16 mt-10">
           <p className=" z-10 opacity-25  uppercase">2020 - ongoing</p>
           <p  className=" text-7xl z-10 opacity-30 font-extralight">Tomorrowland</p>
         </div>
-        <div className="ex flex items-start gap-24 mt-10">
+        <div img-title="Navy Pier" className="ex flex items-start gap-24 mt-10">
           <p className=" z-10 opacity-25 uppercase">2018 - today</p>
-          <p img-title="Navy Pier" className=" text-7xl z-10 opacity-50   font-extralight">Navy Pier</p>
+          <p  className=" text-7xl z-10 opacity-50   font-extralight">Navy Pier</p>
         </div>
-        <div className="ex flex items-start gap-24  mt-10">
+        <div img-title="MSI Chicago" className="ex flex items-start gap-24  mt-10">
           <p className=" z-10 opacity-25 uppercase">2015 - today</p>
-          <p img-title="MSI Chicago" className=" text-7xl z-10 opacity-50 font-extralight">MSI Chicago</p>
+          <p  className=" text-7xl z-10 opacity-50 font-extralight">MSI Chicago</p>
         </div>
-        <div className="ex flex items-start gap-40 mt-10">
+        <div img-title="This Way Louise's Phone" className="ex flex items-start gap-40 mt-10">
           <p className=" z-10 opacity-25 uppercase">2016</p>
-          <p img-title="This Way Louise's Phone" className=" text-7xl z-10 opacity-50 font-extralight">This Way Louise's Phone</p>
+          <p  className=" text-7xl z-10 opacity-50 font-extralight">This Way Louise's Phone</p>
         </div>
-        <div className="ex flex items-start gap-24  mt-10">
+        <div img-title="Kikk Festival 2018" className="ex flex items-start gap-24  mt-10">
           <p className=" z-10 opacity-25 uppercase">2012 - today</p>
-          <p img-title="Kikk Festival 2018" className=" text-7xl z-10 opacity-50 font-extralight">Kikk Festival 2018</p>
+          <p  className=" text-7xl z-10 opacity-50 font-extralight">Kikk Festival 2018</p>
         </div>
-        <div className="ex flex items-start gap-40 mt-10">
+        <div img-title="The Kennedy Center" className="ex flex items-start gap-40 mt-10">
           <p className=" z-10 opacity-25 uppercase">2017</p>
-          <p img-title="The Kennedy Center" className=" text-7xl z-10 opacity-50 font-extralight">The Kennedy Center</p>
+          <p  className=" text-7xl z-10 opacity-50 font-extralight">The Kennedy Center</p>
         </div>
-        <div className=" ex flex items-start gap-20  mt-10">
+        <div img-title="Royal Opera Of Wallonia" className=" ex flex items-start gap-20  mt-10">
           <p className=" z-10 opacity-25 uppercase">2016 - ongoing</p>
-          <p img-title="Royal Opera Of Wallonia" className=" text-7xl z-10 opacity-50 font-extralight">Royal Opera Of Wallonia</p>
+          <p  className=" text-7xl z-10 opacity-50 font-extralight">Royal Opera Of Wallonia</p>
         </div>
       </div>
 
